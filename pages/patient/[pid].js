@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import { Layout, LoadingContent, ErrorContent } from "components";
 import { Tile, Button } from "carbon-components-react"
 import useFetch from "react-fetch-hook";
@@ -22,12 +23,17 @@ const PatientConsent = () => {
 
     return (
         <Layout>
+            <Head>
+                <title>Softhread: Consent Record</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <Tile>
                 <div className="bx--grid consent">
 
                     <div className="bx--row">
                         <div className="bx--col">
-                            <h3>Consent Records</h3>
+                            <h3>Consent Record</h3>
                         </div>
                     </div>
 

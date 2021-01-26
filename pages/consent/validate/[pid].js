@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import { Layout, LoadingContent, ErrorContent } from "components";
 import { Tile } from "carbon-components-react"
 import useFetch from "react-fetch-hook";
@@ -34,6 +35,11 @@ const ValidateConsent = () => {
 
     return (
         <Layout>
+            <Head>
+                <title>Softhread:Consent Validation</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <Tile>
                 <div className="bx--grid consent">
                     <div className="bx--row">
