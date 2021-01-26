@@ -1,0 +1,15 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  color: $white;
+  padding: 0.75rem 0;
+
+  &__heading {
+    max-width: $wrapper;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

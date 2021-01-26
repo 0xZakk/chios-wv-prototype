@@ -8,8 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@carbon/grid": "*",
+    "@carbon/icons-react": "*",
+    "@carbon/type": "*",
+    "carbon-components": "*",
+    "carbon-components-react": "*",
+    "carbon-icons": "*",
+    "hygen": "*",
     "next": "10.0.5",
+    "node-sass": "*",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-fetch-hook": "^1.8.5"
   }
 }

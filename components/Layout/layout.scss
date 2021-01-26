@@ -1,0 +1,16 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: $ui-03;
+
+  &__content {
+    // Accounts for the header:
+    min-height: 100vh;
+    padding-top: $layout-06;
+    padding-bottom: $layout-04;
+  }
+
+  > .bx--tile {
+    padding: $layout-02 $layout-03;
+  }
+}

@@ -1,0 +1,35 @@
+.consent {
+  h3 {
+  }
+
+  h4 {
+  }
+
+  h5 {
+  }
+
+  p {
+    @include carbon--type-style("body-short-02");
+  }
+
+  &__content-row {
+    .bx--col {
+      margin-bottom: $spacing-04;
+    }
+  }
+
+  .bx--tile {
+    background-color: $ui-03;
+
+    .bx--grid,
+    .bx--row,
+    .bx--col {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .bx--row:not(:last-of-type) {
+    padding-bottom: $spacing-05;
+  }
+}

@@ -1,0 +1,17 @@
+.page-footer {
+  background-color: $ui-05;
+  color: $ui-02;
+  padding: $layout-03 0;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: $spacing-06;
+  }
+}

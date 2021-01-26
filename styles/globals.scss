@@ -1,0 +1,65 @@
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true
+);
+
+@import "carbon-components/scss/globals/scss/styles.scss";
+@import "carbon-components/scss/globals/grid/grid";
+@import "@carbon/type/scss/classes";
+@import "@carbon/type/scss/type";
+@import "@carbon/type/scss/font-face/mono";
+@import "@carbon/type/scss/font-face/sans";
+@include carbon--type-reset();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+
+$black: #000;
+$white: #fff;
+
+/*
+ * UI Colors
+ */
+$ui-01: #f4f4f4;
+$ui-02: #fff;
+$ui-03: #e0e0e0;
+$ui-04: #8d8d8d;
+$ui-05: #161616;
+
+/*
+ * Text Colors
+ */
+$text-01: #161616;
+$text-02: #525252;
+$text-03: #a8a8a8;
+$text-04: #ffffff;
+$text-05: #6f6f6f;
+
+$wrapper: 1020px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: $wrapper;
+  margin: 0 auto;
+}
+
+@import "./consent.scss";
+@import "../components/Layout/layout.scss";
+@import "../components/PageHeader/page-header.scss";
+@import "../components/PageFooter/page-footer.scss";
+@import "../components/LoadingContent/loading-content.scss";
+@import "../components/ErrorContent/error-content.scss";
